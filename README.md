@@ -7,7 +7,7 @@
 
 <br>
 <h2 align="center">Expected Preview.</h2>
-<p align="center">❗ Design <b>might change</b> whenever changes may be required.</p>
+<p align="center">❗ Designs <b>might differ</b> from the original prototypes.</p>
 
 <h4>Main Page Design</h4>
 <img src="https://i.imgur.com/gpldrXe.png" href="https://github.com/Shagnikpaul/helios">
