@@ -26,8 +26,7 @@ REAL_BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = str(os.getenv('secretkey'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -117,8 +116,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
-STATICFILES_DIRS = [os.path.join(REAL_BASE_DIR, 'frontend', 'build', 'static')]
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(REAL_BASE_DIR,'frontend', 'build', 'static'),)
+
+print(STATICFILES_DIRS)
+print(REAL_BASE_DIR)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
