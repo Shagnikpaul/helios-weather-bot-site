@@ -3,7 +3,7 @@
 
 <h2 align = "center">A React website with Django as backend for <a href="https://github.com/Shagnikpaul/helios">Helios - A Discord Weather Bot</s>.</h2>
 
-<p align="center"><b>🟡 WORK IN PROGRESS...</b> Expecting to continue with the development process after <code>31st April 2023</code>.</p>
+<p align="center"><b>🟡 WORK IN PROGRESS...</b> Expecting to continue with the development process after <code>30th April 2023</code>.</p>
 
 <br>
 <h2 align="center">Expected Preview.</h2>
