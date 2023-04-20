@@ -10,11 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 REAL_BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -26,7 +26,7 @@ REAL_BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = str(os.getenv('secretkey'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(REAL_BASE_DIR, 'frontend/build')],
+        "DIRS": [os.path.join(REAL_BASE_DIR, 'frontends/dist')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -70,6 +70,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
+if DEBUG:
+    import mimetypes
+    print('yes added!!!')
+    mimetypes.add_type("application/javascript", ".js", True)
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -116,12 +120,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-
+STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(REAL_BASE_DIR,'frontend', 'build', 'static'),)
+STATICFILES_DIRS = [os.path.join(
+    REAL_BASE_DIR, 'frontends', 'dist'),]
 
-print(STATICFILES_DIRS)
-print(REAL_BASE_DIR)
+# print(STATICFILES_DIRS)
+# print(REAL_BASE_DIR)
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
