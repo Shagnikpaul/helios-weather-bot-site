@@ -4,6 +4,8 @@
 <h2 align = "center">A React website with Django as backend for <a href="https://github.com/Shagnikpaul/helios">Helios - A Discord Weather Bot</s>.</h2>
 
 <p align="center"><b>🟡 WORK IN PROGRESS...</b></p>
+<br>
+<a href="https://helios-weather-bot-website.vercel.app/"><p align="center"><b>Click here for preview.</b></p></a>
 
 <br>
 <h2 align="center">Expected Preview.</h2>
