@@ -8,7 +8,7 @@ export default function WIP() {
         </div>
         
         <h1 className="text-center mt-10 mb-4 text-4xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Cooking something Interesting...</h1>
-        <p className='text-center heading mt-5 dark:text-whitemb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'>
+        <p className='text-center heading mt-5 dark:text-whitemb-6 text-lg font-normal px-8 text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400'>
           I might take a while to complete this website; till then, why don't you try the Discord Weather Bot for whom this website is being made? Click on the top-right button to invite the bot, and click the link below for <span className="text-blue-400">instructions</span> on how to use the bot.
         </p>
         <a target="_blank" href="https://shagniks-organization.gitbook.io/helios-weather-bot/" class="mt-10 inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
