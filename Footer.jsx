@@ -1,6 +1,6 @@
 export default function Footer() {
   return(
-    <>
+    <div>
       <footer class="bg-orange-100 shadow dark:bg-orange-950 mt-11">
           <div class="w-full mx-auto p-4 md:flex md:items-center md:justify-between">
             <span class="text-sm text-orange-900 sm:text-center dark:text-orange-400"><a href="https://github.com/Shagnikpaul/" class="hover:underline">Developed by Shagnik Paul</a>.
@@ -12,6 +12,6 @@ export default function Footer() {
           </ul>
           </div>
       </footer>
-    </>
+    </div>
   )
 };

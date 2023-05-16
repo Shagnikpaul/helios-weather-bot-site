@@ -1,7 +1,7 @@
 export default function WIP() {
   return(
     <>
-      <div className="bg-orange-200 dark:bg-orange-900  nav-margin text-center">
+      <div className="bg-orange-200 dark:bg-orange-900  nav-margin text-center w-screen">
         
         <div className="mx-auto p-7">
           <img className="h-auto mx-auto  rounded-xl shadow-xl dark:shadow-gray-800" src="https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F041%2F943%2F1aa1blank.jpg" alt="image description" />
