@@ -3,6 +3,11 @@ export default {
   darkMode: "media",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    backgroundImage: {
+      bgimg: "url('https://i.imgur.com/jImgx5Z.png')",
+      bgimgdark: "url('https://i.imgur.com/Q33YQpG.png')",
+    },
+
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
     },
@@ -26,6 +31,12 @@ export default {
         dark: "#FFFFFF",
       },
 
+      buttonText: {
+        light: "#FFCA64",
+        DEFAULT: "#FFCA64",
+        dark: "#000000",
+      },
+
       textaccents: {
         light: "#110600",
         DEFAULT: "#110600",
@@ -46,8 +57,8 @@ export default {
       },
 
       borc: {
-        light: "#000000",
-        DEFAULT: "#FFFFFF",
+        light: "#FF9D42",
+        DEFAULT: "#FF9D42",
         dark: "#605602",
       },
 
@@ -62,7 +73,11 @@ export default {
         dark: "#DB8E47",
       },
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.2)",
+      },
+    },
   },
   plugins: [],
 };
