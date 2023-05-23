@@ -3,10 +3,10 @@ export default {
   darkMode: "media",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    backgroundImage: {
-      bgimg: "url('https://i.imgur.com/jImgx5Z.png')",
-      bgimgdark: "url('https://i.imgur.com/Q33YQpG.png')",
-    },
+    // backgroundImage: {
+    //   bgimg: "url('https://i.imgur.com/jImgx5Z.png')",
+    //   bgimgdark: "url('https://i.imgur.com/Q33YQpG.png')",
+    // },
 
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
