@@ -5,7 +5,6 @@
 
 <p align="center"><b>🟡 WORK IN PROGRESS...</b></p>
 <br>
-<a href="https://helios-weather-bot.vercel.app/"><p align="center"><b>Click here for preview.</b></p></a>
 
 <br>
 <h2 align="center">Expected Preview.</h2>
