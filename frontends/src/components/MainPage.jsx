@@ -12,7 +12,7 @@ export default function MainPage(params) {
           
           <div className="flex flex-row justify-center">
               <div class="backdrop-blur-lg mb-11 max-w-2xl p-11 bg-cardbg/15 morerou dark:bg-cardbg-dark/30 border-borc/10 dark:border-borc-dark/10 shadow-[0_0_50px_-10px_rgba(0,0,0,0.15)]">
-              <a href="#">
+              <a href="https://github.com/Shagnikpaul/helios-weather-bot">
                   <h5 class="mb-2 font-bold tracking-tight text-textaccents dark:text-textaccents-dark text-6xl">Helios</h5>
               </a>
               <p className=" text-textaccents/50 dark:text-textaccents-dark/50 font-medium text-lg">A Discord Weather Bot.</p>
@@ -30,7 +30,7 @@ export default function MainPage(params) {
           
               <p className="font-poppins text-semibold mt-10 text-textaccents/80 dark:text-textaccents-dark/90">
                
-              Weather data by <a href="https://openweathermap.org/" target="_blank" className="font-semibold hover:text-tahiti">OpenWeatherMap</a> and developed by <a href="https://github.com/Shagnikpaul" target="_blank" className="font-semibold hover:text-tahiti">Shagnik Paul</a>.</p>
+              Weather data by <a href="https://openweathermap.org/" target="_blank" className="font-semibold hover:text-tahiti">OpenWeatherMap</a> and bot developed by <a href="https://github.com/Shagnikpaul" target="_blank" className="font-semibold hover:text-tahiti">Shagnik Paul</a>.</p>
                 </div>   
                
               
