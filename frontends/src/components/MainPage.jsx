@@ -30,7 +30,7 @@ export default function MainPage(params) {
           
               <p className="font-poppins text-semibold mt-10 text-textaccents/80 dark:text-textaccents-dark/90">
                
-              Weather data by <a href="https://openweathermap.org/" target="_blank" className="font-semibold hover:text-tahiti">OpenWeatherMap</a> and bot developed by <a href="https://github.com/Shagnikpaul" target="_blank" className="font-semibold hover:text-tahiti">Shagnik Paul</a>.</p>
+              Weather data by <a href="https://openweathermap.org/" className="font-semibold hover:text-tahiti">OpenWeatherMap</a> and bot developed by <a href="https://github.com/Shagnikpaul" className="font-semibold hover:text-tahiti">Shagnik Paul</a>.</p>
                 </div>   
                
               
@@ -52,7 +52,7 @@ export default function MainPage(params) {
 
 
 
-                <a data-tooltip-target="tooltip-animation" href="https://discord.com/api/oauth2/authorize?client_id=1045392740499853312&permissions=429497117776&scope=bot" target="_blank" class="inline-flex items-center justify-center px-10 py-3 text-base font-semibold text-center text-buttonText dark:text-buttonText-dark bg-buttonMajor dark:bg-buttonMajor-dark rounded-lg hover:bg-buttonMajor/80 dark:hover:bg-buttonMajor-dark/80  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <a data-tooltip-target="tooltip-animation" href="https://discord.com/api/oauth2/authorize?client_id=1045392740499853312&permissions=429497117776&scope=bot" class="inline-flex items-center justify-center px-10 py-3 text-base font-semibold text-center text-buttonText dark:text-buttonText-dark bg-buttonMajor dark:bg-buttonMajor-dark rounded-lg hover:bg-buttonMajor/80 dark:hover:bg-buttonMajor-dark/80  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                 Invite
                 </a>
 
@@ -62,7 +62,7 @@ export default function MainPage(params) {
                 </div>
 
 
-                <a data-tooltip-target="tooltip-animation2" href="https://shagniks-organization.gitbook.io/helios-weather-bot/" target="_blank" class="inline-flex items-center justify-center px-8 py-3  text-base font-semibold text-center text-buttonText dark:text-buttonText-dark bg-buttonMajor dark:bg-buttonMajor-dark rounded-lg hover:bg-buttonMajor/80 dark:hover:bg-buttonMajor-dark/80  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <a data-tooltip-target="tooltip-animation2" href="https://shagniks-organization.gitbook.io/helios-weather-bot/" class="inline-flex items-center justify-center px-8 py-3  text-base font-semibold text-center text-buttonText dark:text-buttonText-dark bg-buttonMajor dark:bg-buttonMajor-dark rounded-lg hover:bg-buttonMajor/80 dark:hover:bg-buttonMajor-dark/80  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     Bot Commands
                 
                 </a>
