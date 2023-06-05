@@ -8,11 +8,14 @@ export default function NavBar() {
     <>
       <nav className="bg-cardbg/20 shadow-md backdrop-blur-md dark:bg-cardbg-dark/25 fixed w-full z-20 top-0 left-0 py-2">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-3">
-          
-        <a href="https://github.com/Shagnikpaul/helios-weather-bot" className="flex items-center">
-            <img src="https://i.imgur.com/X0cEcCf.png" className="h-12 mr-3" alt="Helios Weather Bot Logo." />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-textaccents dark:text-textaccents-dark">Helios Weather Bot.</span>
-        </a>
+
+        <div className="flex flex-row">
+          <img src="https://i.imgur.com/X0cEcCf.png" className="h-12 mr-3" alt="Helios Weather Bot Logo." />  
+          <a href="https://github.com/Shagnikpaul/helios-weather-bot" className="flex items-center">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-textaccents dark:text-textaccents-dark">Helios Weather Bot.</span>
+          </a>
+        </div>
+        
   
 
 
