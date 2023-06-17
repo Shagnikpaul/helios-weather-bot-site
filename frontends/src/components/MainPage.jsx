@@ -1,4 +1,4 @@
-
+import { Link, Route } from "wouter";
 export default function MainPage(params) {
   return(
     <div>
@@ -61,11 +61,15 @@ export default function MainPage(params) {
                     <div class="tooltip-arrow" data-popper-arrow></div>
                 </div>
 
-
-                <a data-tooltip-target="tooltip-animation2" href="https://shagniks-organization.gitbook.io/helios-weather-bot/" class="inline-flex items-center justify-center px-8 py-3  text-base font-semibold text-center text-buttonText dark:text-buttonText-dark bg-buttonMajor dark:bg-buttonMajor-dark rounded-lg hover:bg-buttonMajor/80 dark:hover:bg-buttonMajor-dark/80  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                <Link href="/commands"> 
+                
+                  <a data-tooltip-target="tooltip-animation2" href="https://shagniks-organization.gitbook.io/helios-weather-bot/" class="inline-flex items-center justify-center px-8 py-3  text-base font-semibold text-center text-buttonText dark:text-buttonText-dark bg-buttonMajor dark:bg-buttonMajor-dark rounded-lg hover:bg-buttonMajor/80 dark:hover:bg-buttonMajor-dark/80  focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     Bot Commands
                 
                 </a>
+                
+                </Link>
+                
                 <div id="tooltip-animation2" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-500 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
                     Guide to use the bot.
                     <div class="tooltip-arrow" data-popper-arrow></div>
