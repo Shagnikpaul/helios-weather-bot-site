@@ -1,4 +1,14 @@
+import axios from 'axios';
+
+
 export default function WIP() {
+  
+  axios.get('http://127.0.0.1:8000/data/?format=json').then(function(res){
+      console.log(res.data)
+  }).catch(function(err) {
+    console.log("ERR!!!")
+  });
+  
   return(
     <>
       <div className="bg-orange-200 dark:bg-orange-900  nav-margin text-center w-screen">
