@@ -7,6 +7,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import MainPage from './components/MainPage'
 import P404 from './components/P404';
+import CommadnsPage from './components/CommandsPage';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
           <NavBar></NavBar>
           <Switch>
             <Route path='/' component={MainPage} />
-            <Route path='/commands' component={WIP} />
+            <Route path='/commands' component={CommadnsPage} />
             <Route component={P404}></Route>
           </Switch>
           

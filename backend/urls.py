@@ -17,10 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from .views import mainpage
-
+from django.urls import re_path
 
 urlpatterns = [
+    path('api/', include('api.urls')),
     path("admin/", admin.site.urls),
-    path('', view=mainpage),
-    path('', include('api.urls')),
+    re_path(r'.*', view=mainpage),
 ]
