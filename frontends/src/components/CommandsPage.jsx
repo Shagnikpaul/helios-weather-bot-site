@@ -8,7 +8,7 @@ export default function CommadnsPage(params) {
     const [d , setD] = useState([]);
     const [msg, setMsg] = useState("Loading Commands from the server...")
     let getData = function() {
-        axios.get("https://helios-weather-bot-site-git-ui-beta-shagnikpaul.vercel.app/api/data/?format=json",{ transformResponse: (r) => r }).then( (res) => {
+        axios.get("https://heliosweatherbot.vercel.app/api/data/?format=json",{ transformResponse: (r) => r }).then( (res) => {
             const k = res.data;
             dat = JSON.parse(k);
             const r = dat.map(d => <CommandCard  data = {{commands_syntax: d['commands_syntax'], description: d['description'], is_Admin:d['is_Admin']}}/>);
