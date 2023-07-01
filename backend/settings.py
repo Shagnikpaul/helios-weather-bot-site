@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 # REAL_BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -29,6 +35,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh']
 # Application definition
 
 INSTALLED_APPS = [
+    "api",
+    'corsheaders',
+    'rest_framework',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -45,7 +54,17 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
+
+
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:8081',
+    'http://localhost:5173',
+    'http://127.0.0.1:8000',
+)
 
 ROOT_URLCONF = "backend.urls"
 
@@ -76,7 +95,14 @@ if DEBUG:
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-   
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': os.getenv('db'),
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': os.getenv("mongos")
+            }  
+        }
 }
 
 

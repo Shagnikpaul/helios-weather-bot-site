@@ -10,6 +10,7 @@ export default {
 
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
+      sourcecode: ["Source Code Pro", "monospace"],
     },
 
     colors: {
