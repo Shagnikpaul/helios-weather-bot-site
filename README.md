@@ -3,7 +3,7 @@
 
 <h2 align = "center">A React website with Django as backend for <a href="https://github.com/Shagnikpaul/helios">Helios - A Discord Weather Bot</s>.</h2>
 
-<p align="center"><b>🟡 WORK IN PROGRESS...</b></p>
+<p align="center"><a href="https://heliosweatherbot.vercel.app/"><b>Visit the Website.</b></a></p>
 <br>
 
 <br>
