@@ -30,7 +30,8 @@ export default function MainPage(params) {
           
               <p className="font-poppins text-semibold mt-10 text-textaccents/80 dark:text-textaccents-dark/90">
                
-              Weather data by <a href="https://openweathermap.org/" className="font-semibold hover:text-tahiti">OpenWeatherMap</a> and bot developed by <a href="https://github.com/Shagnikpaul" className="font-semibold hover:text-tahiti">Shagnik Paul</a>.</p>
+              Weather data by <a href="https://openweathermap.org/" className="font-semibold hover:text-tahiti">OpenWeatherMap</a> and bot developed by <a href="https://github.com/Shagnikpaul" className="font-semibold hover:text-tahiti">Shagnik Paul</a>
+              and <a href="https://github.com/Debanjan-Adak" className="font-semibold hover:text-tahiti">Debanjan Adak</a>.</p>
                 </div>   
                
               
